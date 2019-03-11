@@ -15,5 +15,8 @@ action "GitHub Action for AWS" {
   env = {
     AWS_DEFAULT_REGION = "us-west-1"
   }
-  secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
+  secrets = [
+    "AWS_SECRET_ACCESS_KEY",
+    "AWS_ACCESS_KEY_ID",
+  ]
 }
