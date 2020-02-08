@@ -15,7 +15,7 @@ jobs:
         args: 
           build hello.bal
     - name: AWS CLI
-      uses: actions/aws/cli@efb074ae4510f2d12c7801e4461b65bf5e8317e6
+      uses: ItsKarma/aws-cli@v1.70.0
       with:
         args: 
           lambda update-function-code --function-name hello --zip-file fileb://aws-ballerina-lambda-functions.zip
